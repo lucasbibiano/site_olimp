@@ -9,7 +9,9 @@ gem 'pg'
 
 gem 'devise'
 
-gem 'therubyracer'
+gem 'magic_encoding'
+
+gem 'therubyracer', :platform => :ruby
 
 # Gems used only for assets and not required
 # in production environments by default.
