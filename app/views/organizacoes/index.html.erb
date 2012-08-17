@@ -1,0 +1,23 @@
+<h1>Listing organizacoes</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @organizacoes.each do |organizacao| %>
+  <tr>
+    <td><%= organizacao.nome %></td>
+    <td><%= link_to 'Show', organizacao %></td>
+    <td><%= link_to 'Edit', edit_organizacao_path(organizacao) %></td>
+    <td><%= link_to 'Destroy', organizacao, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Organizacao', new_organizacao_path %>

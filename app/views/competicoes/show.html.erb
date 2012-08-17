@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nome:</b>
+  <%= @competicao.nome %>
+</p>
+
+<p>
+  <b>Sexo:</b>
+  <%= @competicao.sexo %>
+</p>
+
+<p>
+  <b>Idade min:</b>
+  <%= @competicao.idade_min %>
+</p>
+
+<p>
+  <b>Idade max:</b>
+  <%= @competicao.idade_max %>
+</p>
+
+
+<%= link_to 'Edit', edit_competicao_path(@competicao) %> |
+<%= link_to 'Back', competicoes_path %>

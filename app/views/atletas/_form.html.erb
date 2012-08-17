@@ -1,0 +1,33 @@
+<%= form_for(@atleta) do |f| %>
+  <% if @atleta.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@atleta.errors.count, "error") %> prohibited this atleta from being saved:</h2>
+
+      <ul>
+      <% @atleta.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :idade %><br />
+    <%= f.number_field :idade %>
+  </div>
+  <div class="field">
+    <%= f.label :sexo %><br />
+    <%= f.check_box :sexo %>
+  </div>
+  <div class="field">
+    <%= f.label :organizacao %><br />
+    <%= f.text_field :organizacao %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

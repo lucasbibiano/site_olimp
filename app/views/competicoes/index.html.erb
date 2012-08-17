@@ -1,0 +1,29 @@
+<h1>Listing competicoes</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Sexo</th>
+    <th>Idade min</th>
+    <th>Idade max</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @competicoes.each do |competicao| %>
+  <tr>
+    <td><%= competicao.nome %></td>
+    <td><%= competicao.sexo %></td>
+    <td><%= competicao.idade_min %></td>
+    <td><%= competicao.idade_max %></td>
+    <td><%= link_to 'Show', competicao %></td>
+    <td><%= link_to 'Edit', edit_competicao_path(competicao) %></td>
+    <td><%= link_to 'Destroy', competicao, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Competicao', new_competicao_path %>

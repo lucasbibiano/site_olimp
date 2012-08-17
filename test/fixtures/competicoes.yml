@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nome: MyString
+  sexo: false
+  idade_min: 1
+  idade_max: 1
+
+two:
+  nome: MyString
+  sexo: false
+  idade_min: 1
+  idade_max: 1

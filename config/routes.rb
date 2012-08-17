@@ -1,4 +1,10 @@
 SiteOlimpiadas::Application.routes.draw do
+  resources :competicoes
+
+  resources :atletas
+
+  resources :organizacoes
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
