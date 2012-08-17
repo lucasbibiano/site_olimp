@@ -13,3 +13,10 @@
 # ActiveSupport::Inflector.inflections do |inflect|
 #   inflect.acronym 'RESTful'
 # end
+
+ActiveSupport::Inflector.inflections do |inflect|
+	inflect.irregular 'atleta', 'atletas'
+	inflect.irregular 'competicao', 'competicoes'
+	inflect.irregular 'usuario', 'usuarios'
+	inflect.irregular 'organizacao', 'organizacoes'
+end
